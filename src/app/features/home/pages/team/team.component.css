@@ -1,0 +1,37 @@
+.tradu{
+    border: brown solid 2px;
+    width: 30%;
+    padding: 2%;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+   
+}
+.equipo{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.frases{
+    width: 50%;
+    margin-left: 26%;
+    margin-top: -10%;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+.frase{
+    float: right;
+    width: 70%;
+    margin-top:-9%;
+    margin-right: 9%;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+ 

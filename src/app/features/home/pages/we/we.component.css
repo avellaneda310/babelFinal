@@ -1,0 +1,19 @@
+.nosotros{
+    border: brown solid 2px;
+    padding: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 85%;
+    margin-top: -2%;
+    margin-left: 4%;
+    
+}
+.frases{
+    width: 50%;
+    margin-left: 26%;
+    margin-top: -10%;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}

@@ -1,0 +1,34 @@
+.formulario{
+    background: url('./../../../../../assets/images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 4%;
+}
+.historia1{
+    margin-top: 0%;
+}
+.parrafo{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -3%;
+    font-family:unset;
+}
+.frases{
+    width: 50%;
+    margin-left: 26%;
+    margin-top: -10%;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+ 
+.frase{
+    float: right;
+    width: 70%;
+    margin-top:-9%;
+    margin-right: 9%;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
