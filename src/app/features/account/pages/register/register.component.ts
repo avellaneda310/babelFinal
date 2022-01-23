@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { RegisterService } from './../../../../service/account/register.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,20 +15,26 @@ export class RegisterComponent implements OnInit {
     nombre: new FormControl('', []),
     password: new FormControl('', [])
   }
-  registerform: FormGroup = new FormGroup(this.formObject);
+  form: FormGroup = new FormGroup(this.formObject);
 
 
-  constructor(private service: RegisterService) { }
+  constructor(private service: RegisterService, private router: Router) { }
 
 
   ngOnInit(): void {
-    this.registerform = new FormGroup(this.formObject);
+    //this.form = new FormGroup(this.formObject);
+    this.form
   }
 
   async register() {
-    console.log(this.registerform);
+    console.log(this.form);
+    console.log("hola")
     try {
-      const result: any = await this.service.postRegister(this.registerform.value);
+      const result: any = await this.service.usuarios(this.form.value);
+      localStorage.setItem('JWT', result.JWT);
+      localStorage.setItem('usuario', JSON.stringify(result.info))
+      console.log(result)
+
     }
     catch (error) {
       return error

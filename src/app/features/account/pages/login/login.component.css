@@ -1,4 +1,14 @@
 .fullsize{
     height: 100vh !important;
     margin-top: -10%;
+
+
 }
+.col-6{
+    border: brown solid 8px;
+    width: 60%;
+    height: 50%;
+    padding: 2%;
+
+}
+

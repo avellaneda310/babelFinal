@@ -10,9 +10,9 @@ export class NavbarComponent implements OnInit {
     {links: '/history', title: 'Historia'},
     {links: '/team', title: 'Equipo'},
     {links: '/we', title: 'Nosotros'},
-    {links: '/account/contacto', title: 'Contacto'},
     {links: '/account/login', title: 'Clientes'},
     {links: '/account/register', title: 'Registrarse'},
+    {links: '/account/contacto', title: 'Contacto'},
   ]
 
   constructor() { }

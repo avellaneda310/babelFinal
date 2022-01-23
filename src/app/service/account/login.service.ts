@@ -6,7 +6,7 @@ import { BaseService } from '../base.service';
 })
 export class LoginService extends BaseService{
   auth(obj: any) {
-    this.setEndpoint('usuarios'); // localhost:3000/login
+    this.setEndpoint('auth'); // localhost:3000/login
     return this.post(obj);
   }
 }

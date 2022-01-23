@@ -1,7 +1,6 @@
-<body style="margin-top: 3%;">
+<body style="margin-top: 10%;">
     <header>
-        <img src="./../../../../../assets/images/logoBabel.png" style="max-width: 20%; margin-left: 1%; margin-bottom: -1.5%;" />
-        <hr class="linea" style="height: 10px;">
+
         <div class="frases">
             <p>“La traducción debe tender a impresionar al público a que va dirigida como impresiona el original al público
                 que lo ha leído.”</p>
@@ -14,8 +13,8 @@
     </header>
     <main style="margin-top: -2%;">
         <div class="botonNos">
-            <a href="home" button type="button" class="btn btn-outline-dark"
-                style="font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 92%; margin-top: 2%; border-color: brown;">
+            <a routerLink="/" button type="button" class="btn btn-outline-dark"
+                style="font-family: Georgia, 'Times New Roman', Times, serif; margin-left: 92%; margin-top: -7%; border-color: brown;">
                 volver </a>
         </div><br>
         <article class="nosotros">
@@ -60,45 +59,5 @@
     
     </main>
 </body>
-<body id="tren">
-    <header>
 
 
-    </header>
-    <main>
-        <div class="botonlogin">
-            <a href="home" button type="button" class="btn btn-outline-dark">
-            volver </a>
-        </div>
-        <div class="form-container">
-            <form class="form-login" onsubmit="login(event)">
-                <h3 class="my-title">sing up!
-                    <i class="bi bi-file-lock"></i>
-                </h3>
-                <div>
-                    <label for="email">correo electronico:</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="matiaspagnuolo@gmail.com" required>
-                </div>
-                <div>
-                    <label for="password">contraseña:</label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="************"  maxlength="12" minlength="6" required>
-                </div>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="nombre" class="form-control" name="nombre" id="nombre" placeholder="***********" required>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label" for="recuerdame">recuerdame</label>
-                    <input class="form-check-input" type="checkbox" name="recuerdame" id="recuerdame">
-                </div>
-                <div><h3 class="error-massage" id="error"></h3></div>
-                <div>
-                    <button class="btn btn-primary my-button" type="submit">
-                        sing up
-                    </button>
-                </div>
-            </form>
-        </div>
-    </main>
-
-</body>

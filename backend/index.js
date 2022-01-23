@@ -1,20 +1,19 @@
 const express = require('express');
 const app = express();
 const conectarDB = require('./../backend/config/db');
+const cors = require('cors')
 
-const usuariosRoute = require('./routes/usuarios')
 
 conectarDB();
 
-// Habilitamos express.json
-app.use(express.json({ extend: true }));
+app.use(express.json({ extend: true }));//json
+app.use(cors());
 
-// port donde escucha el server
 const PORT = process.env.PORT_SERVER || 4000;
 
-// Crea ruta usuario api/usuarios
-app.use('/api/usuarios', usuariosRoute);
-app.use('/api/auth', require('./routes/auth'));// es el login....
+//Rutas
+app.use('/api/usuarios', require('./routes/usuarios'));
+app.use('/api/auth', require('./routes/auth'));
 app.use('/api/proyectos', require('./routes/proyectos'));
 app.use('/api/traductor', require('./routes/traductor'));
 

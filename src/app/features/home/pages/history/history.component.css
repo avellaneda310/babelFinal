@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 4%;
+    margin-top: 10%;
 }
 .historia1{
     margin-top: 0%;
@@ -16,7 +16,7 @@
 }
 .frases{
     width: 50%;
-    margin-left: 26%;
+    margin-left: 28%;
     margin-top: -10%;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     ])
   }
   form: FormGroup = new FormGroup(this.formObject);
-  constructor(private service: LoginService, private swal: SwalService) { }
+  constructor(private service: LoginService, private swal: SwalService, private router: Router) { }
 
   ngOnInit(): void {
     this.form = new FormGroup(this.formObject);
@@ -43,18 +43,28 @@ export class LoginComponent implements OnInit {
       : '';
     return mensaje;
   }
-   login() {
+   async login() {
     console.log("hola");
     try {
-      const result: any =  this.service.auth(this.form.value);
+      const result: any =  await this.service.auth(this.form.value);
       this.swal.normalMessage({ html: 'Sesion Iniciada' });
+
+
+      let status = false;
       
-        localStorage.setItem('JWT', result.JWT);
-        localStorage.setItem('usuario', JSON.stringify(result.info))
+      localStorage.setItem('JWT', result.JWT) 
+      localStorage.setItem('auth', JSON.stringify(result.info))
+      this.router.navigate(['contacto']);
+      
+
+      console.log(result)
       
     }
     catch (e) {
-      this.swal.normalMessage({ html: 'Usuario o password incorrectos', icon: 'error' });
+      await this.swal.normalMessage({ html: 'Usuario o password incorrectos', icon: 'error' });
     }
   }
 }
+
+
+

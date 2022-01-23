@@ -12,9 +12,10 @@ import { AccountModule } from './features/account/account.module';
 
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
 
   ],
   imports: [

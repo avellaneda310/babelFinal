@@ -1,3 +1,9 @@
-#registro{
-    background: black;
+.container-fluid{
+    border: brown solid 8px;
+    width: 60%;
+    height: 60%;
+    padding-top: 0.5%;
+    padding-bottom: 3%;
+
+
 }

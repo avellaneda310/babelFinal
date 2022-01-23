@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
- }
+}
  
- .inicio{
+.inicio{
      margin-left: 2.5%;
      margin-bottom: -2%;
      width: 95%;
@@ -11,17 +11,17 @@
      justify-content:space-evenly;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: large; 
- }
+}
       
-  .inicio1{
+.inicio1{
      width: 80%;
      margin-top: 1%;
      margin-right: 3%;
      text-align: justify;
- }
+}
     
-  .inicio2{
+.inicio2{
      margin-top: 1%;
      width: 80%;
      text-align: justify;
- }
+}

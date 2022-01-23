@@ -6,7 +6,7 @@ import { BaseService } from '../base.service';
 })
 export class RegisterService extends BaseService {
 
-  postRegister(obj: any) {
+  usuarios(obj: any) {
     this.setEndpoint('usuarios'); // localhost:3000/login
     return this.post(obj);
   }

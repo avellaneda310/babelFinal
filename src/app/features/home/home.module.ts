@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './../home/home.component';
+import { HomeComponent } from './home.component';
 import { TeamComponent } from './pages/team/team.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { WeComponent } from './pages/we/we.component';

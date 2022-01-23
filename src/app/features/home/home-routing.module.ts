@@ -7,8 +7,9 @@ import { WeComponent } from './pages/we/we.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent,
+  {path: '', 
   children:[
+    {path: '', component: HomeComponent},
     {
       path: 'history', component: HistoryComponent
     },
@@ -21,6 +22,8 @@ const routes: Routes = [
   ]}
 
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
