@@ -54,7 +54,7 @@ export class LoginComponent implements OnInit {
       
       localStorage.setItem('JWT', result.JWT) 
       localStorage.setItem('auth', JSON.stringify(result.info))
-      this.router.navigate(['contacto']);
+    
       
 
       console.log(result)
